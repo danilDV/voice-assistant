@@ -19,13 +19,13 @@ while True:
             print(f"Recognized: {text}")
 
             if text == 'открой спотифай' or text == 'открой spotify':
-                subprocess.call(r'C:\Users\glazo\AppData\Roaming\Spotify\Spotify.exe')
+                subprocess.call(r'application path here')
             if text == 'закрой спотифай' or text == 'закрой spotify':
                 for process in (process for process in psutil.process_iter() if process.name() == "Spotify.exe"):
                     process.kill()
 
             if text == 'открой телеграм' or text == 'открой telegram':
-                subprocess.call(r'C:\Workspace\Telegram Desktop\Telegram.exe')
+                subprocess.call(r'application path here')
             if text == 'закрой телеграм' or text == 'закрой telegram':
                 for process in (process for process in psutil.process_iter() if process.name() == "Telegram.exe"):
                     process.kill()
